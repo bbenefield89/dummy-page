@@ -22,9 +22,13 @@ nav a {
 }
 
 #main-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 #main-nav a {
@@ -41,7 +45,8 @@ nav a {
 	letter-spacing: .3em;
 	margin-right: 1.5em;
 	overflow: auto;
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     -moz-box-sizing: content-box;
 }
 
@@ -52,17 +57,25 @@ li {
 }
 
 #hero-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 56, 86, 0.6)), to(rgba(32, 56, 86, 0.6))),
+              url(../images/hero_vhigh_small.jpeg) no-repeat;
+  background: -webkit-linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
+              url(../images/hero_vhigh_small.jpeg) no-repeat;
+  background: -o-linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
+              url(../images/hero_vhigh_small.jpeg) no-repeat;
   background: linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
               url(../images/hero_vhigh_small.jpeg) no-repeat;
-  -webkit-background-size: initial;
-  -moz-background-size: initial;
-  -o-background-size: initial;
   background-size: initial;
   height: 67vh;
   margin-top: -1em;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1 {
@@ -77,7 +90,8 @@ h1 {
 	font-weight: lighter;
 	letter-spacing: .1em;
 	width: 90%;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 
 #hero-section button {
@@ -104,10 +118,17 @@ h1 {
 
 #pitch-section {
     padding: 4em 1em 2em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #pitch-header {
@@ -120,8 +141,13 @@ h1 {
 }
 
 #pitch-first {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin-bottom: 2em;
 }
 
@@ -130,8 +156,13 @@ h1 {
 }
 
 #pitch-second {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin-bottom: 2em;
 }
 
@@ -144,8 +175,13 @@ h1 {
 }
 
 #pitch-third {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin-bottom: 2em;
 }
 
@@ -169,17 +205,21 @@ h1 {
 
 #customer-section {
 	background: url(../images/grid_01.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   margin-top: 4em;
   padding: 4em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #customer-section h2 {
@@ -193,8 +233,13 @@ h1 {
 	width: 80%;
 	text-align: center;
 	padding: .5em;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	border: 1px solid lightgray;
 	margin-bottom: 2em;
 }
@@ -209,7 +254,8 @@ h1 {
 	border: 1px solid black;
 	border-radius: 50%;
 	width: 1.3em;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 
 .customer p {
@@ -218,9 +264,14 @@ h1 {
 
 #demo-section {
 	background-color: rgba(24, 35, 46, .9);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 4em;
 }
 
@@ -271,8 +322,11 @@ h1 {
 }
 
 footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding: 4em 0em;
 }
 
@@ -302,7 +356,9 @@ footer section:last-of-type {
 }
 
 footer section i {
-	transform: scale(2);
+	-webkit-transform: scale(2);
+	    -ms-transform: scale(2);
+	        transform: scale(2);
 	margin-right: 10%;
 }
 
@@ -331,11 +387,14 @@ footer section i {
 
 @media only screen and (min-width: 601px) {
 	#hero-section {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 56, 86, 0.6)), to(rgba(32, 56, 86, 0.6))),
+              url(../images/hero_high_med.jpeg) no-repeat center center;
+		background: -webkit-linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
+              url(../images/hero_high_med.jpeg) no-repeat center center;
+		background: -o-linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
+              url(../images/hero_high_med.jpeg) no-repeat center center;
 		background: linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
               url(../images/hero_high_med.jpeg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 	}
 }
@@ -391,7 +450,10 @@ footer section i {
 
 @media only screen and (min-width: 844px) {
 	#pitch-first {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	#pitch-first-description {
@@ -399,14 +461,22 @@ footer section i {
 	}
 
 	.fa-envelope {
-		order: 3;
-		align-self: center;
+		-webkit-box-ordinal-group: 4;
+		    -ms-flex-order: 3;
+		        order: 3;
+		-ms-flex-item-align: center;
+		    align-self: center;
 		width: 20vw;
-		transform: scale(2);
+		-webkit-transform: scale(2);
+		    -ms-transform: scale(2);
+		        transform: scale(2);
 	}
 
 	#pitch-second {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	#pitch-second-description {
@@ -414,13 +484,19 @@ footer section i {
 	}
 
 	.fa-search {
-		align-self: center;
+		-ms-flex-item-align: center;
+		    align-self: center;
 		width: 20vw;
-		transform: scale(2);
+		-webkit-transform: scale(2);
+		    -ms-transform: scale(2);
+		        transform: scale(2);
 	}
 
 	#pitch-third {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	#pitch-third-description {
@@ -428,20 +504,28 @@ footer section i {
 	}
 
 	.fa-bug {
-		order: 3;
-		align-self: center;
+		-webkit-box-ordinal-group: 4;
+		    -ms-flex-order: 3;
+		        order: 3;
+		-ms-flex-item-align: center;
+		    align-self: center;
 		width: 20vw;
-		transform: scale(2);
+		-webkit-transform: scale(2);
+		    -ms-transform: scale(2);
+		        transform: scale(2);
 	}
 }
 
 @media only screen and (min-width: 1000px) {
   #hero-section {
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 56, 86, 0.6)), to(rgba(32, 56, 86, 0.6))),
+              url(../images/hero_low_lg.jpeg) no-repeat center center;
+		background: -webkit-linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
+              url(../images/hero_low_lg.jpeg) no-repeat center center;
+		background: -o-linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
+              url(../images/hero_low_lg.jpeg) no-repeat center center;
 		background: linear-gradient(rgba(32, 56, 86, 0.6), rgba(32, 56, 86, 0.6)),
               url(../images/hero_low_lg.jpeg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   }
 }
